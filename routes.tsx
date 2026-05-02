@@ -1,4 +1,6 @@
-import { createBrowserRouter } from "react-router";
+import React from "react";
+import { createBrowserRouter } from "react-router-dom";
+
 import Home from "./Home";
 import AddPrescription from "./AddPrescription";
 import UploadPhoto from "./UploadPhoto";
@@ -10,9 +12,9 @@ import LogoShowcase from "./LogoShowcase";
 
 export const router = createBrowserRouter([
   {
-  path: "/splash",
-  element: <Splash />,
-},
+    path: "/splash",
+    element: <Splash />,
+  },
   {
     path: "/",
     children: [
