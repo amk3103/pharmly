@@ -1,13 +1,12 @@
 import { createBrowserRouter } from "react-router";
-import Root from "./components/Root";
-import Home from "./components/screens/Home";
-import AddPrescription from "./components/screens/AddPrescription";
-import UploadPhoto from "./components/screens/UploadPhoto";
-import PrescriptionDetails from "./components/screens/PrescriptionDetails";
-import Search from "./components/screens/Search";
-import FamilyProfiles from "./components/screens/FamilyProfiles";
-import Splash from "./components/screens/Splash";
-import LogoShowcase from "./components/screens/LogoShowcase";
+import Home from "./Home";
+import AddPrescription from "./AddPrescription";
+import UploadPhoto from "./UploadPhoto";
+import PrescriptionDetails from "./PrescriptionDetails";
+import Search from "./Search";
+import FamilyProfiles from "./FamilyProfiles";
+import Splash from "./Splash";
+import LogoShowcase from "./LogoShowcase";
 
 export const router = createBrowserRouter([
   {
@@ -16,7 +15,6 @@ export const router = createBrowserRouter([
   },
   {
     path: "/",
-    Component: Root,
     children: [
       { index: true, Component: Home },
       { path: "add", Component: AddPrescription },
