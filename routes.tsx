@@ -10,19 +10,19 @@ import LogoShowcase from "./LogoShowcase";
 
 export const router = createBrowserRouter([
   {
-    path: "/splash",
-    Component: Splash,
-  },
+  path: "/splash",
+  element: <Splash />,
+},
   {
     path: "/",
     children: [
-      { index: true, Component: Home },
-      { path: "add", Component: AddPrescription },
-      { path: "upload", Component: UploadPhoto },
-      { path: "prescription/:id", Component: PrescriptionDetails },
-      { path: "search", Component: Search },
-      { path: "family", Component: FamilyProfiles },
-      { path: "logo", Component: LogoShowcase },
+      { index: true, element: <Home /> },
+      { path: "add", element: <AddPrescription /> },
+      { path: "upload", element: <UploadPhoto /> },
+      { path: "prescription/:id", element: <PrescriptionDetails /> },
+      { path: "search", element: <Search /> },
+      { path: "family", element: <FamilyProfiles /> },
+      { path: "logo", element: <LogoShowcase /> },
     ],
   },
 ]);
